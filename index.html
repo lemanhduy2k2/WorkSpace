@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <header class="heading">
+                <p>Playing Music
+                    <span class="order-music">1 of</span>
+                    <span class="all-music"> 23</span>
+                </p>
+            </header>
+            <div class="cd-thumb">
+                <div class="cd">
+    
+                </div>
+            </div>
+            <div class="song-info">
+                <h2 class="song--name">
+                    Stay
+                </h2>
+                <p class="song--author">
+                    The Kid LAROI , Justin Bieber
+                </p>
+            </div>
+
+            <div class="song--control">
+                <div class="song--duration">
+                    <span class="time-start">00:00</span>
+                    <input id="duration-bar" type="range" value="0" min="0" max="100" step="1">
+                    <span class="time-duration">00:00</span>
+                </div>
+                <audio id="audio" src=""></audio>
+                <div class="song--volume">
+                    <i  class="mute-volume fa-solid fa-volume-xmark"></i>
+                    <input type="range" value="80" min="0" max="100" step="2" class="sounds-bar">
+                    <i class="volume-on fa-solid fa-volume-high"></i>
+                </div>
+            </div>
+
+            <div class="song-adjust">
+
+                <div class="repeat-btn">
+                    <i class="repeat-icon fa-solid fa-repeat"></i>
+                </div>
+
+                <div class="previous-btn">
+                    <i class="previous-icon fa-solid fa-backward-step"></i>
+                </div>
+                
+                <div class="tongle-play">
+                    <i class="caret-icon fa-solid fa-caret-right"></i>
+                    <i class="pause-icon fa-solid fa-pause"></i>
+                </div>
+
+                <div class="next-btn">
+                    <i class="next-icon fa-solid fa-forward-step"></i>
+                </div>
+
+
+                <div class="random-btn">
+                    <i class="random-icon fa-solid fa-rotate-right"></i>
+                </div>
+            </div>
+
+            <div id="wave">
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+            </div>
+
+            <div class="songs-list">
+                
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./assets/javascript/main.js"></script>
+</body>
+</html>
